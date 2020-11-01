@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fulano de tal - contato</title>
+    <meta name="description" content="Fulano de tal Curriculum Vitae" />
+    <link rel="shortcut icon" href="/imgs/user.png" />
+  </head>
+
+  <body>
+    <header>
+      <table>
+        <tr>
+          <td>
+            <h1>Fulano de tal</h1>
+          </td>
+          <td>
+            <img
+              src="/imgs/user.png"
+              alt="foto de perfil"
+              width="80"
+              height="80"
+            />
+          </td>
+        </tr>
+      </table>
+    </header>
+    <hr>
+    <nav>
+      <table>
+        <tr>
+          <td>
+            <a href="/index.html"> Home -</a>
+          </td>
+
+          <td>
+            <a href="/fotos.html"> Galeria -</a>
+          </td>
+
+          <td>
+            <a href="#"> Contactar serviço </a>
+          </td>
+        </tr>
+      </table>
+    </nav>
+    <hr>
+    <main>
+      <form method="post">
+        <section>
+          <h2>Dados pessoais</h2>
+
+          <div>
+            <label for="nome"> Nome Completo: </label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Fulano de tal"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email"> Principal Email: </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="fabricioziliotti@mail.com"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="idade"> Idade: </label>
+            <input
+              type="number"
+              id="idade"
+              name="idade"
+              placeholder="22"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="ContactTel"> Telefone de contato: </label>
+            <input
+              type="tel"
+              id="ContactTel"
+              name="ContactTel"
+              placeholder="016-9999-8888"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="nascimento"> Data de nascimento: </label>
+            <input type="date" id="nascimento" name="nascimento" />
+          </div>
+
+          <table>
+            <tr>
+              <td>
+                <label> Sexo: <br /> </label>
+              </td>
+              <td>
+                <input type="radio" name="sexo" value="M" /> Masculino <br />
+              </td>
+
+              <td>
+                <input type="radio" name="sexo" value="F" /> Feminino <br />
+              </td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <td>
+                <label> Estado civil: <br /> </label>
+              </td>
+
+              <td>
+                <input type="radio" name="ec" value="N" /> Solteiro(a) <br />
+              </td>
+
+              <td>
+                <input type="radio" name="ec" value="N" /> Casado(a) <br />
+              </td>
+            </tr>
+          </table>
+        </section>
+        <hr>
+        <section>
+          <h2>Dados da empresa:</h2>
+          <div>
+            <label for="cnpj"> CNPJ: </label>
+            <input
+              type="text"
+              id="cnpj"
+              name="cnpj"
+              placeholder="00.000.000/0000-00"
+              minlength="14"
+              maxlength="18"
+            />
+          </div>
+
+          <div>
+            <label for="razaoSocial"> Razão Social: </label>
+            <input
+              type="text"
+              id="razaoSocial"
+              name="razaoSocial"
+              placeholder="Meu negócio Ltda"
+            />
+          </div>
+
+          <div>
+            <label for="ramoAtuacao"> Ramo de atuação: </label>
+            <input type="text" id="ramoAtuacao" name="ramoAtuacao" />
+          </div>
+        </section>
+        <hr>
+        <section>
+          <h2>Endereço residencial ou da empresa:</h2>
+
+          <div>
+            <label for="cep"> CEP: </label>
+            <input type="text" id="cep" name="cep" required />
+          </div>
+
+          <label for="tipo-logradouro">Tipo de logradouro: </label>
+
+          <select name="tipoLogradouro" id="tipo-logradouro" required>
+            <option value="">-</option>
+            <option value="rua">Rua</option>
+            <option value="praca">Praça</option>
+            <option value="alameda">Alameda</option>
+            <option value="Viaduto">viaduto</option>
+            <option value="avenida">Avenida</option>
+          </select>
+
+          <div>
+            <label for="logradouro"> Logradouro: </label>
+            <input type="text" id="logradouro" name="logradouro" required />
+          </div>
+
+          <div>
+            <label for="cidade"> Cidade natal: </label>
+            <input type="text" id="cidade" name="cidade" required />
+          </div>
+
+          <div>
+            <label for="estado"> Estado natal: </label>
+            <input
+              type="text"
+              id="estado"
+              name="estado"
+              placeholder="SP"
+              maxlength="2"
+              required
+            />
+          </div>
+        </section>
+        <hr>
+        <section>
+          <h2>Descrição detalhada do interesse:</h2>
+          <textarea name="comment" rows="8" cols="60"></textarea>
+        </section>
+        <hr>
+        <section>
+          <h2>Como descobriu meu serviço?</h2>
+
+          <input type="checkbox" name="network" value="youtube" /> Youtube
+          <br /><br />
+
+          <input type="checkbox" name="network" value="linkedin" /> Linkedin
+          <br /><br />
+
+          <input type="checkbox" name="network" value="facebook" /> Facebook
+          <br /><br />
+
+          <input type="checkbox" name="network" value="pessoalmente" />
+          Pessoalmente <br /><br />
+        </section>
+
+        <input type="submit" value="Submeter Contato"/>
+        <br>
+        <br>
+      </form>
+    </main>
+
+    <hr />
+
+    <section>
+      <h2>Contato</h2>
+
+      <address>
+        <a href="tel:YYY-XXXX-XXXX">
+          <strong>Telefone:</strong> YYY-XXXX-XXXX
+        </a>
+        <br />
+        <a href="mailto:fabricioziliotti@gmail.com">
+          <strong>Email:</strong> fabricioziliotti@gmail.com
+        </a>
+      </address>
+    </section>
+    <hr>
+    <footer>Desenvolvido por Fulano de tal</footer>
+  </body>
+</html>
