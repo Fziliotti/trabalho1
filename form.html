@@ -46,7 +46,7 @@
     <hr>
     <main>
       <form method="post">
-        <section>
+        <fieldset>
           <h2>Dados pessoais</h2>
 
           <div>
@@ -140,9 +140,9 @@
               </td>
             </tr>
           </table>
-        </section>
+        </fieldset>
         <hr>
-        <section>
+        <fieldset>
           <h2>Dados da empresa:</h2>
           <div>
             <label for="cnpj"> CNPJ: </label>
@@ -170,9 +170,9 @@
             <label for="ramoAtuacao"> Ramo de atuação: </label>
             <input type="text" id="ramoAtuacao" name="ramoAtuacao" />
           </div>
-        </section>
+        </fieldset>
         <hr>
-        <section>
+        <fieldset>
           <h2>Endereço residencial ou da empresa:</h2>
 
           <div>
@@ -212,14 +212,14 @@
               required
             />
           </div>
-        </section>
+        </fieldset>
         <hr>
-        <section>
+        <fieldset>
           <h2>Descrição detalhada do interesse:</h2>
           <textarea name="comment" rows="8" cols="60"></textarea>
-        </section>
+        </fieldset>
         <hr>
-        <section>
+        <fieldset>
           <h2>Como descobriu meu serviço?</h2>
 
           <input type="checkbox" name="network" value="youtube" /> Youtube
@@ -233,7 +233,17 @@
 
           <input type="checkbox" name="network" value="pessoalmente" />
           Pessoalmente <br /><br />
-        </section>
+        </fieldset>
+
+        <fieldset>
+          <h2>Quer receber notícias em seu email?</h2>
+
+          <input type="radio" id="sim" name="receberNoticias" checked>
+          <label for="sim">Sim</label>
+
+          <input type="radio" id="nao" name="receberNoticias" checked>
+          <label for="nao">Não</label>
+        </fieldset>
 
         <input type="submit" value="Submeter Contato"./>
         <br>
